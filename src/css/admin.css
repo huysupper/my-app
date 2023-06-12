@@ -1,0 +1,107 @@
+.page{
+    display: flex;
+    
+}
+.sidebar{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 100vh;
+    padding: 50px 0 72px;
+    background: #ffffff;
+    border-right: 1px solid #E4E4E4;
+}
+
+.sidebar-top {
+    position: absolute;
+    top: 0;
+     left: 0; 
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+.sidebar__caption {
+    margin-top: 90px;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    color: #808191;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33333;
+}
+
+.sidebar-menu{
+    max-height: 100%;
+    padding: 0px 20px 30px
+}
+.link-menu{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #808191;
+    text-decoration: none;
+    /* margin-left: 17px; */
+    height: 56px;
+    padding: 0 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    transition: all ease 0.25s;
+}
+
+.link-menu:hover {
+    color: #6C5DD3;
+}
+.menu-icon{
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.link-menu.active {
+    background: #6C5DD3;
+    color: #ffffff;
+}
+
+.page__warpper{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.heading-warrper{
+  
+    padding: 48px;
+    
+}
+
+.heading-hello{
+    font-size: 24px;
+    line-height: 1.33333;
+    font-weight: 500;
+    margin: 0;
+}
+
+.heading-welcome{
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0;
+
+}
+.menu-text p{
+    margin: 0;
+}
+
+.table{
+    margin: 0 1px;
+}
+
+.btn_link_project{
+    margin-left: 5px;
+    margin-top: -19px;
+    margin-bottom: 30px;
+}

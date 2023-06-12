@@ -1,9 +1,9 @@
-import { projectList } from "./dataFake"
+import { projectList } from "../dataFake"
 const ProjectDetail=(data)=>{
-    console.log(data)
         const currentProject=projectList.find((item)=>{
             return item.id==data.id
         })
+        console.log(currentProject)
        if(currentProject){
            return `
            <h1>Detail page</h1>

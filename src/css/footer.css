@@ -1,0 +1,17 @@
+/* footer */
+footer{
+    text-align: center;
+    padding: 24px 0;
+    
+}
+footer a{
+    padding: 0 10px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.img-footer-1{
+    width: 28px;
+}
+footer a:hover{
+    opacity: 1;
+}
