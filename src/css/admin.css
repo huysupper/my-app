@@ -98,10 +98,27 @@
 
 .table{
     margin: 0 1px;
+    margin-top: 28px;
 }
 
 .btn_link_project{
     margin-left: 5px;
     margin-top: -19px;
     margin-bottom: 30px;
+}
+
+.btn-search{
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tim_kiem{
+    margin-right: 5px;
+}
+.search{
+    padding:  5px;
+    border-radius: 6px;
+    border: 2px solid rgb(160, 158, 158);
+  
 }

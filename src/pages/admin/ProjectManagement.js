@@ -6,8 +6,7 @@ const ProjectManagementPage=()=>{
         fetch('http://localhost:3000/projectList')
         .then(response=>response.json())
         .then((data)=>{
-            console.log(data)
-            return setProject(data)
+             setProject(data)
         })
     },[]);
     useEffect(()=>{
@@ -27,6 +26,20 @@ const ProjectManagementPage=()=>{
          })  
        }
     })
+    useEffect(()=>{
+        const input=document.querySelector('.search');
+        const button=document.querySelector('.button_search')
+        button.addEventListener('click',()=>{
+          const value=projects.filter(item=>{
+                return item.title === input.value
+          })
+          if(value.length >0){
+              setProject(value)
+                
+          }
+          
+        })
+    });
     return `
     <div class="page">
         ${AdminPage()}
@@ -36,7 +49,15 @@ const ProjectManagementPage=()=>{
                         <h5 class="heading-hello">Hi Hoang Huy</h5>
                         <h2 class="heading-welcome">Welcome back👋</h2>
                     </div>
+                    <div class="btn-search">
+                    <div>
                     <a class="btn_link_project" href="/admin/project/add"><button class="btn btn-primary">Add project</button></a>
+                    </div>
+                    <div class="tim_kiem">
+                    <input type="text" class="search " placeholder="nhập title để tìm kiếm">
+                    <button class="button_search btn btn-secondary">submit</button>
+                    </div>
+                    </div>
                     <table class="table">
                     
                     <thead>
